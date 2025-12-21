@@ -1,0 +1,37 @@
+print("Beginner Friendly Program")
+
+# Calculator
+print("\nCalculator")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+
+if op == '+':
+    print("Result:", num1 + num2)
+elif op == '-':
+    print("Result:", num1 - num2)
+elif op == '*':
+    print("Result:", num1 * num2)
+elif op == '/':
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid operation")
+
+# String Reverse
+print("\nString Reverse")
+text = input("Enter a string: ")
+reversed_text = ""
+for char in text:
+    reversed_text = char + reversed_text
+print("Reversed string:", reversed_text)
+
+# Even or Odd
+print("\nEven or Odd Check")
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
